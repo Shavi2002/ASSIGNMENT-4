@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<body>
+<h1>Shambhavi Singh</h1>
+<p>Phone- +16239866712</p>
+<p>Address- 955 E Baseline Rd, Tempe, AZ-85283</p>
+<p>Email- ssing382@asu.edu</p>
+  www.linkedin.com/in/
+shambhavi-singh2002
+</body>
+	<title>My Resume</title>
+	<style>
+		/* Styling for the accordion */
+		.accordion {
+			background-color: #eee;
+			color: #444;
+			cursor: pointer;
+			padding: 18px;
+			width: 100%;
+			border: none;
+			text-align: left;
+			outline: none;
+			font-size: 15px;
+			transition: 0.4s;
+		}
+
+		/* Styling for the active state of the accordion */
+		.active, .accordion:hover {
+			background-color: #ccc;
+		}
+
+		/* Styling for the panel that contains the additional information */
+		.panel {
+			padding: 0 18px;
+			background-color: white;
+			display: none;
+			overflow: hidden;
+		}
+	</style>
+</head>
+<body>
+	<!-- Accordion section -->
+	<button class="accordion">Education</button>
+	<div class="panel">
+		<p>Bachelor of Science in Computer Science, XYZ University, May 2021</p>
+		<p>Coursework: Data Structures, Algorithms, Database Systems, Operating Systems</p>
+	</div>
+
+	<!-- Accordion section -->
+	<button class="accordion">Experience</button>
+	<div class="panel">
+		<p>Software Engineer, ABC Company, June 2021 - Present</p>
+		<ul>
+			<li>Developed new features for web application using React.js</li>
+			<li>Implemented backend functionality using Node.js and MongoDB</li>
+			<li>Collaborated with cross-functional teams to deliver high-quality software</li>
+		</ul>
+	</div>
+
+	<!-- Accordion section -->
+	<button class="accordion">Skills</button>
+	<div class="panel">
+		<ul>
+			<li>Programming languages: JavaScript, Python, Java, C++</li>
+			<li>Web development frameworks: React.js, Angular.js, Node.js, Express.js</li>
+			<li>Database systems: MongoDB, MySQL, PostgreSQL</li>
+		</ul>
+	</div>
+
+	<script>
+		// JavaScript code to toggle the display of the accordion
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+			acc[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var panel = this.nextElementSibling;
+				if (panel.style.display === "block") {
+					panel.style.display = "none";
+				} else {
+					panel.style.display = "block";
+				}
+			});
+		}
+	</script>
+</body>
+</html>
